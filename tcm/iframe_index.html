@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 0;
+            margin: 0;
+        }
+
+        .ca {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .lore, .teoria, .fan {
+            width: 100%;
+            font-size: 40px;
+        }
+
+        .lore img, .teoria img, .fan img {
+            width: 350px;
+            height: auto;
+        }
+
+        .texto1, .texto2, .texto3 {
+            flex: 1;
+            padding: 40px;
+        }
+
+        @media screen and (max-width: 460px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ca {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .texto1, .texto2, .texto3 {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lore ca">
+        <img src="imagen lore.png" alt="Imagem ilustrativa sobre a lore">
+        <div class="texto1 txt">
+            <p>Falaremos sobre os Jogos,</p>
+        </div>
+    </div>
+
+    <div class="teoria ca">
+        <img class="img" src="imagen teoria.png" alt="Imagem ilustrativa sobre teorias">
+        <div class="texto2 txt">
+            <p>Sobre as teorias,</p>
+        </div>
+    </div>
+    <div class="fan ca">
+        <img src="the joy.jpg" alt="Imagem sobre fan games">
+        <div class="texto3 txt">
+            <p>Sobre as fan games e mais.</p>
+        </div>
+    </div>
+</body>
+</html>
